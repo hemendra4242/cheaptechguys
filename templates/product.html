@@ -13,9 +13,9 @@
     <meta name="description" content="Molla - Bootstrap eCommerce Template">
     <meta name="author" content="p-themes">
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'assets/images/icons/apple-touch-icon.png' %}">
-    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'assets/images/icons/favicon-32x32.png' %}">
-    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'assets/images/icons/favicon-16x16.png' %}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'assets/images/icons/nn.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'assets/images/icons/nn.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'assets/images/icons/nn.png' %}">
     <link rel="manifest" href="{% static 'assets/images/icons/site.html' %}">
     <link rel="mask-icon" href="{% static 'assets/images/icons/safari-pinned-tab.svg' %}" color="#666666">
     <link rel="shortcut icon" href="{% static 'assets/images/icons/nn.png' %}">
@@ -86,10 +86,10 @@
                                     <h1 class="product-title">{{ product.Title }}</h1><!-- End .product-title -->
 
                                     <div class="product-price">
-                                        Rs..{{ product.After_price }}
+                                        {{ product.After_price }}
                                     </div><!-- End .product-price -->
                                     <div class="product-price">
-                                        Rs..<del>{{ product.Before_price }}</del>
+                                        <del>{{ product.Before_price }}</del>
                                     </div><!-- End .product-price -->
                                     <div class="product-content">
                                         <p>{{ product.Specialfeatures }} and many more features...</p>
@@ -350,7 +350,7 @@
                                 <div class="product-cat">
                                     <a href="#">Women</a>
                                 </div><!-- End .product-cat -->
-                                <h3 class="product-title"><a href="{{ prod.get_absolute_url }}">Brown paperbag waist <br>pencil skirt</a></h3><!-- End .product-title -->
+                                <h3 class="product-title"><a href="{{ prod.get_absolute_url }}">{{ prod.Title }}</a></h3><!-- End .product-title -->
                                 <div class="product-price">
                                     Rs..{{ prod.After_price }}
                                 </div><!-- End .product-price -->
