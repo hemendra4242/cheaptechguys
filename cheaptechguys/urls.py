@@ -10,6 +10,4 @@ urlpatterns = [
     path('register', views.register, name='register'),
     path('about us', views.about_us, name='about us'),
     path('affiliate disclosure', views.affiliate_disclosure, name='affiliate disclosure'),
-    path('mobsearch', views.mobsearch, name='mobsearch'),
-    path('navsearch', views.navsearch, name='navsearch')
 ]
