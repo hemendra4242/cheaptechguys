@@ -12,18 +12,6 @@ from datetime import datetime
 
 def Home(request):
     return render(request, 'index-4.html')
-
-def navsearch(request):
-    if 'q' in request.GET:
-        q=request.GET.get('q')
-        product = Product.objects.filter(Title__icontains=q)
-    return render(request, 'navbar.html', {'product' :product}
-
-def mobsearch(request):
-    if 'q' in request.GET:
-        q=request.GET.get('q')
-        product = Product.objects.filter(Title__icontains=q)
-    return render(request, 'mobnav.html', {'product' :product}
     
 
 def login(request):
